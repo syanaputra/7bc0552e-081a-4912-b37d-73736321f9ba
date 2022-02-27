@@ -28,7 +28,7 @@ docker-compose run test
 
 ## Changing the data
 
-You can change / update the data by modifying the `data/*.json` files.
+You can change / update the data by modifying the `app/data/*.json` files.
 
 ## Maintainer
 Stephanus Yanaputra - stephanus.yanaputra@gmail.com
