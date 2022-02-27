@@ -1,0 +1,24 @@
+version: '2'
+
+services:
+  app:
+    image: phpdockerio/php71-cli
+    volumes:
+      - ./app:/var/www
+      - ./config:/config
+    networks:
+      - default-network
+    command: bash -c "cd /var/www && php /var/www/main.php"
+
+  test:
+    image: phpdockerio/php71-cli
+    volumes:
+      - ./app:/var/www
+      - ./config:/config
+    networks:
+      - default-network
+    command: bash -c "cd /var/www && php /var/www/vendor/bin/phpunit tests"
+
+networks:
+  default-network:
+    driver: bridge
