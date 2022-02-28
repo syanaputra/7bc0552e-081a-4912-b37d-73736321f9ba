@@ -1,6 +1,4 @@
-# UUID
-
-ACER coding challenge
+# ACER coding challenge
 
 ## How to use
 
